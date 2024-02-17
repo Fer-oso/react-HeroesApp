@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export const useForm = (initialStateForm) => {
  
-    const [stateform,setStateform] = useState(initialStateForm);
+    const [stateform, setStateform] = useState(initialStateForm);
 
     const onChangeForm = ({target}) =>{
 

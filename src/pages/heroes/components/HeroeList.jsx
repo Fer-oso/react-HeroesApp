@@ -5,10 +5,15 @@ import { getAllHeroes } from '../helpers/getAllHeroes';
 
 export const HeroeList = ({ valueSearch }) => {
 
-    let heroesList = useMemo(()=>getAllHeroes());
+    let heroesList;
 
     if (valueSearch !== '') {
+
         heroesList = getHeroesByPublisher(valueSearch)
+
+    } else {
+
+        heroesList = getAllHeroes();
     }
 
     return (
