@@ -8,11 +8,11 @@ import { HeroeCard } from '../components/HeroeCard';
 export const HeroesRouter = () => {
     return (
         <>
-            <Navbar />
+           <Navbar />
             <Routes>
                 <Route path="/heroes" element={<Home />} />
                 <Route path="/heroes/:id" element={<HeroeCard/>}/>
-                <Route path="about" element={<About />} />
+                <Route path="/about" element={<About />} />
             </Routes>
 
         </>

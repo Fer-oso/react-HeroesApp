@@ -2,7 +2,6 @@ import { useReducer } from "react"
 import { UserContext } from "./UserContext"
 import { authReducer } from "./authReducer"
 import { types } from "./types/types"
-import { json } from "react-router-dom"
 
 /*EL PROVIDER ES EL QUE SE ENCARGA DE PROVEER EL STATE INICIAL Y LOS DISTINTOS FUNCIONES A MI APLICACION*/ 
 
@@ -16,7 +15,7 @@ const init = () =>{
     }
 }
 
-export const UserProvider = ({ children }) => {
+export const AuthUserProvider = ({ children }) => {
 
     const [authState, dispatch] = useReducer(authReducer, {},init);
 

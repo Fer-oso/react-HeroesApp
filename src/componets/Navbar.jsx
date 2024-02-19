@@ -18,7 +18,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/heroes">
           Heroes
