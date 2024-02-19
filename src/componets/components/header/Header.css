@@ -1,10 +1,10 @@
-header{
+.header{
     height: 50vh !important;
-    background: url(../../../../../heroes/header.jpg) no-repeat fixed center;
+    background: url(../../../../../heroes/header-min.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
-h1{
+.header-title{
     color: white;
     font-size: 60px;
     font-weight: 300;
@@ -12,7 +12,7 @@ h1{
     text-align: center;
 }
 
-h6{
+.header-text{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-weight: 600;

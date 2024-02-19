@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { HeroeList } from './heroes/components/HeroeList'
-import { SearchBar } from '../componets/SearchBar'
+import { Header } from '../componets/components/header/Header';
+import { SearchBar } from '../componets/components/searchbar/SearchBar';
 import { useLocation } from 'react-router-dom';
 import queryString from 'query-string';
-import { Header } from '../componets/header/Header';
+
 
 export const Home = () => {
 
@@ -21,7 +22,7 @@ export const Home = () => {
     <>
 
       <Header />
-      <div className='container m-auto'>
+      <div className='container'>
         <SearchBar onHandleValueSearchSubmit={onHandleValueSearchSubmit} />
 
         <HeroeList valueSearch={valueSearch} />
